@@ -5,6 +5,9 @@ export const metadata = {
   title: 'Breakfast Buddy',
   description: 'Never skip breakfast again',
   manifest: '/manifest.webmanifest',
+  icons: {
+    apple: '/icons/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
