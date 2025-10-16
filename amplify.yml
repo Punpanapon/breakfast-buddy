@@ -5,6 +5,8 @@ applications:
       phases:
         preBuild:
           commands:
+            - echo "Node:" $(node -v)
+            - echo "NPM:" $(npm -v)
             - npm install --no-audit --no-fund
         build:
           commands:
