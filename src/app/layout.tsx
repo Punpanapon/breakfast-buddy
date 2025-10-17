@@ -1,5 +1,6 @@
 import './globals.css'
 import Link from 'next/link'
+import RegisterSW from '@/components/RegisterSW'
 
 export const metadata = {
   title: 'Breakfast Buddy',
@@ -22,6 +23,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#2563eb" />
       </head>
       <body className="min-h-screen bg-zinc-50 text-zinc-900">
+        <RegisterSW />
         <nav className="bg-white border-b">
           <div className="max-w-4xl mx-auto px-4 py-3">
             <div className="flex items-center justify-between">

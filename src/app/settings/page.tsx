@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 import { Profile } from '@/lib/types'
 import AuthGate from '@/components/AuthGate'
 import { useToast, Toast } from '@/components/Toast'
-import NotificationTestButton from '@/components/NotificationTestButton'
+import NotificationDiagnostics from '@/components/NotificationDiagnostics'
 
 export default function SettingsPage() {
   const [profile, setProfile] = useState<Profile | null>(null)
@@ -201,7 +201,7 @@ export default function SettingsPage() {
               )}
               <div className="pt-4 border-t">
                 <div className="font-medium mb-2">Test Notifications</div>
-                <NotificationTestButton />
+                <NotificationDiagnostics />
               </div>
             </div>
           </div>
